@@ -11,7 +11,7 @@ import Profile from './containers/Profile'
 const App = () => {
   return (
     <div className="App">
-      <Router>
+      <Router basename='/WemuShop'>
         <Header />
         <HolidayBanner />
         <Routes>
