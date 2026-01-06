@@ -1,0 +1,27 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Remove old Semantic UI styles if any */
+.ui.grid.container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.ui.fixed.menu {
+  position: static !important;
+}
+
+/* Ensure proper spacing */
+main {
+  flex: 1;
+  padding-top: 0;
+}

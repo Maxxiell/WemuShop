@@ -1,0 +1,135 @@
+.filter-sidebar {
+  width: 280px;
+  background: rgb(226, 225, 228);
+  padding: 2rem;
+  border-radius: 16px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.filter-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #131921;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.filter-section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.filter-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #131921;
+  margin-bottom: 1rem;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #333;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: all 0.2s;
+  background: white;
+  border: 1px solid transparent;
+}
+
+.filter-option:hover {
+  background: white;
+  border-color: #9a8cb5;
+  transform: translateX(8px);
+}
+
+.filter-option input[type="radio"] {
+  cursor: pointer;
+  accent-color: #9a8cb5;
+  width: 18px;
+  height: 18px;
+}
+
+.filter-option span {
+  text-transform: capitalize;
+}
+
+.clear-filters-btn {
+  width: 100%;
+  padding: 0.875rem;
+  background: #b4b2b5;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 1rem;
+
+}
+
+.clear-filters-btn:hover {
+  background: #9a8cb5;
+}
+
+.dark-mode .filter-sidebar {
+  background: #131313;
+  border-color: #1a1919;
+}
+
+.dark-mode .filter-title {
+  color: #e0e0e0;
+  border-bottom-color: #333;
+}
+
+.dark-mode .filter-section {
+  background: #1a1a1a;
+}
+
+.dark-mode .filter-section-title {
+  color: #e0e0e0;
+}
+
+.dark-mode .filter-option {
+  color: #e0e0e0;
+  background: #161616;
+}
+
+.dark-mode .filter-option:hover {
+  background: #000000;
+  border-color: black;
+}
+
+.dark-mode .clear-filters-btn {
+  background: black;
+  color: white;
+}
+
+.dark-mode .clear-filters-btn:hover {
+  background: #9a8cb5;
+}
+
+@media (max-width: 968px) {
+  .filter-sidebar {
+    width: 100%;
+    position: static;
+    margin-bottom: 2rem;
+  }
+}
+

@@ -1,0 +1,54 @@
+.holiday-banner {
+  background: #000000;
+  color: white;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.holiday-banner-wrapper {
+  display: flex;
+  width: fit-content;
+  animation: scroll-left 20s linear infinite;
+}
+
+.holiday-banner-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  padding: 0 50px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.holiday-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.holiday-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.holiday-text strong {
+  color: #e999ff;
+}
+
+.dark-mode .holiday-banner {
+  background: #000000;
+}
+
